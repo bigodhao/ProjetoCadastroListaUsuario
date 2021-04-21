@@ -1,0 +1,36 @@
+{
+  "pessoas": [
+    {
+      "id": 1,
+      "nome": "Junior",
+      "cpf": "99999999999",
+      "dataNascimento": "21/11/2000",
+      "sexo": "masculino",
+      "biografia": "bg"
+    },
+    {
+      "id": 2,
+      "nome": "lucass",
+      "dataNascimento": "12/10/2004",
+      "cpf": "77777777777",
+      "sexo": "masculino",
+      "biografia": "bgfdbgf"
+    },
+    {
+      "id": 3,
+      "nome": "carol",
+      "cpf": "88888888888",
+      "dataNascimento": "6/7/2002",
+      "sexo": "feminino",
+      "biografia": "bgfdbdf"
+    },
+    {
+      "id": 4,
+      "nome": "paulo",
+      "dataNascimento": "15/08/2000",
+      "cpf": "12345678912",
+      "sexo": "Masculino",
+      "biografia": "ola"
+    }
+  ]
+}

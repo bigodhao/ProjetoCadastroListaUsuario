@@ -1,0 +1,40 @@
+<form class="form-horizontal" [formGroup]="formulario" (ngSubmit)="onSubmit()">
+  <br>
+  <label>
+    <h3> Cadastro </h3>
+  </label>
+  <div class="form-group row">
+    <div class="col-12">
+      <label for="nome">Nome</label>
+      <input type="nome" [ngClass]="aplicaCssErro('nome')" id="nome" formControlName="nome">
+      <app-error-msg [control]="formulario.get('nome')" label="Nome"></app-error-msg>
+    </div>
+    <div class="col-4">
+      <label for="cpf">CPF</label>
+      <input type="text" [ngClass]="aplicaCssErro('cpf')" id="cpf" formControlName="cpf" mask="000.000.000-00">
+      <app-error-msg [control]="formulario.get('cpf')" label="CPF"></app-error-msg>
+    </div>
+    <div class="col-4">
+      <label for="dataNascimento">Data de Nacimento</label>
+      <input type="date" [ngClass]="aplicaCssErro('dataNascimento')" id="dataNascimento" formControlName="dataNascimento">
+      <app-error-msg [control]="formulario.get('dataNascimento')" label="Data de Nascimento"></app-error-msg>
+    </div>
+    <div class="col-4">
+      <label for="sexo" class="control-label">Sexo</label>
+      <select [ngClass]="aplicaCssErro('sexo')" id="cargo" formControlName="sexo" formControlName="sexo">
+        <option>MASCULINO</option>
+        <option>FEMININO</option>
+        <option>OUTROS</option>
+      </select>
+      <app-error-msg [control]="formulario.get('sexo')" label="Sexo"></app-error-msg>
+    </div>
+    <div class="col-12">
+      <label for="Biografia">Biografia</label>
+    <textarea class="form-control" id="Biografia" formControlName="biografia"></textarea>
+    </div>
+  </div>
+
+  <div class="float-right">
+    <button type="submit" class="btn btn-primary" [disabled]="!formulario.valid" >Confirmar</button>
+  </div>
+</form>
